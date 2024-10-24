@@ -1,0 +1,93 @@
+
+<head>
+    
+    <title>Registration</title>
+    <style>
+        body {
+            background-image: url("img/audi.jpg");
+            font-family: Arial;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, select, button {
+            margin-bottom: 10px;
+            width: 100%; 
+        }
+        input, select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .gender-group {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+            margin-bottom: 10px;
+        }
+      
+        button {
+            padding: 10px;
+            background-color: #4c70af;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <form>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name">
+
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name">
+
+        <label for="gender">Gender</label>
+        <div class="gender-group">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <label for="car">Select Car</label>
+        <select id="car" name="car" required>
+            <option value="" select>Select</option>
+            <option value="Honda">Honda</option>
+            <option value="Toyato">Toyato</option>
+            <option value="Audi">Audi</option>
+        </select>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
