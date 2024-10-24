@@ -3,25 +3,27 @@
     
     <title>Registration</title>
     <style>
-        body {
-            background-image: url("img/audi.jpg");
-            font-family: Arial;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
+       body {
+    background-image: url("img/audi.jpg");
+    background-size: cover; /* Ensure the background covers the entire width and height */
+    font-family: Arial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw; /* Set full viewport width */
+    height: 100vh; /* Set full viewport height */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
         .form-container {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             width: 300px;
+            margin-top: 96px;
+            margin-left: 603px;
         }
         form {
             display: flex;
